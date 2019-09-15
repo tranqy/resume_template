@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'components/header.dart';
+import 'components/custom_theme.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,40 +10,20 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Aaron Junod',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: _portfolio(),
+      theme: CustomTheme.current(),
+      home: _portfolio(context),
     );
   }
   
-  Widget _portfolio() {
+  Widget _portfolio(BuildContext context) {
     return CustomScrollView(
       slivers: <Widget>[
-        SliverAppBar(
-                expandedHeight: 200.0,
-                floating: false,
-                pinned: true,
-                flexibleSpace: FlexibleSpaceBar(
-                    title: Text("Aaron Junod",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16.0,
-                        )),
-                    background: Image.network(
-                      "https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?auto=compress&cs=tinysrgb&h=350",
-                      fit: BoxFit.cover,
-                    )),
-              ),
+        Header(),
       ],
     );
   }
 
-  Widget _header() {
-    return Column(
-      children: <Widget>[
-        
-      ],
-    );
-  }
 }
+
+
+
