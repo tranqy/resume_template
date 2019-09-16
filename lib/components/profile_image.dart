@@ -3,10 +3,8 @@ import 'package:flutter/material.dart';
 class ProfileImage extends StatelessWidget {
   const ProfileImage({
     Key key,
-    @required this.context,
   }) : super(key: key);
 
-  final BuildContext context;
 
   @override
   Widget build(BuildContext context) {

@@ -16,8 +16,8 @@ class MyApp extends StatelessWidget {
   }
   
   Widget _portfolio(BuildContext context) {
-    return CustomScrollView(
-      slivers: <Widget>[
+    return ListView(
+      children: <Widget>[
         Header(),
       ],
     );
