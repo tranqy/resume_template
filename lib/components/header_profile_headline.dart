@@ -10,6 +10,7 @@ class HeaderProfileHeadline extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     var _profileDetails = <Widget>[
       Text("Aaron Junod",
           style: TextStyle(
@@ -22,6 +23,7 @@ class HeaderProfileHeadline extends StatelessWidget {
               fontSize: 15.0,
               fontWeight: FontWeight.w300)),
     ];
+
     if (direction == HeaderProfileHeadlineDirection.horizontal) {
       return Row(
         mainAxisAlignment: MainAxisAlignment.start,

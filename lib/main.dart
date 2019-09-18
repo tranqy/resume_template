@@ -1,6 +1,9 @@
+import 'package:aaron_junod_dev/aaron_resume_contents.dart';
 import 'package:flutter/material.dart';
 import 'components/header.dart';
 import 'components/custom_theme.dart';
+import 'components/resume.dart';
+import 'models/resume_content.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Aaron Junod',
       theme: CustomTheme.current(),
-      home: _portfolio(context),
+      home: Scaffold(body: _portfolio(context)),
     );
   }
   
@@ -19,7 +22,16 @@ class MyApp extends StatelessWidget {
     return ListView(
       children: <Widget>[
         Header(),
+        _content(AaronResumeContents.executiveSummary),
+        _content(AaronResumeContents.currentPosition),
       ],
+    );
+  }
+
+  Widget _content(ResumeContent resumeContent) {
+    return Padding(
+      padding: EdgeInsets.all(16),
+      child: Resume(resumeContent: resumeContent,),
     );
   }
 
