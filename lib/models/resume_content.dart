@@ -1,9 +1,12 @@
 import 'resume_position.dart';
+import 'resume_skill.dart';
 
 class ResumeContent {
-  final String sectionTitle;
-  final String sectionContent;
-  final List<ResumePosition> positions;
+  final List<ResumePosition> pastPositions;
+  final ResumePosition currentPosition;
+  final List<ResumeSkill> skills;
+  final String executiveSummary;
 
-  ResumeContent({this.sectionTitle, this.sectionContent, this.positions});
+  ResumeContent({this.pastPositions, this.currentPosition, this.skills, this.executiveSummary});
 }
+

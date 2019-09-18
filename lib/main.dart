@@ -22,8 +22,7 @@ class MyApp extends StatelessWidget {
     return ListView(
       children: <Widget>[
         Header(),
-        _content(AaronResumeContents.executiveSummary),
-        _content(AaronResumeContents.currentPosition),
+        Resume(resumeContent: AaronResumeContents.current),
       ],
     );
   }
