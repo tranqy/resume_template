@@ -1,6 +1,8 @@
 import 'package:aaron_junod_dev/models/resume_position.dart';
 import 'package:flutter/material.dart';
 
+import 'wrap_text.dart';
+
 class Position extends StatelessWidget {
   final ResumePosition resumePosition;
 
@@ -42,12 +44,10 @@ class Position extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Row(
             children: <Widget>[
-              Expanded(
-                  child: Container(
-                      child: Text(
+              WrapText(
                 resumePosition.overview,
                 style: theme.textTheme.body1.copyWith(color: theme.accentColor),
-              )))
+              )
             ],
           ),
         ),
@@ -61,10 +61,7 @@ class Position extends StatelessWidget {
                   onPressed: (){},
                 ),
               ),
-              Expanded(child: Container(child: Padding(
-                padding: const EdgeInsets.only(left:48, top:8, bottom: 8, right: 128),
-                child: Text(accomplishment),
-              ))),
+              WrapText(accomplishment, padding: const EdgeInsets.only(left:48, top:8, bottom: 8, right: 128),),
             ],
           )
       ],

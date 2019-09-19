@@ -7,7 +7,12 @@ import 'models/resume_position.dart';
 class AaronResumeContents {
 
   static ResumeContent current = ResumeContent(
-    executiveSummary: "Technology leader with extensive experience in Financial Services (Fintech) and Software as a Service (SaaS). Exceptional team builder who has effectively delivered broad solutions for small and large scale ﬁnancial systems. Innovative thinker adept at leading teams through uncharted territory.",
+    executiveSummary: [
+      "Technical Executive who has led programs through high growth and long support.", 
+      "Exceptional team builder who has effectively built high throughput agile teams.",
+      "Innovative thinker adept at leading teams through uncharted territory.",
+      "Ruthlessly focused on business value, pragmatism, and iterative delivert."
+    ],
     currentPosition: ResumePosition(
       organization: "Geezeo",
       location: "Braintree, MA",
