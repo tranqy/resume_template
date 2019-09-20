@@ -1,5 +1,18 @@
 
 import 'package:aaron_junod_dev/models/resume_skill.dart';
+import 'package:koukicons/airplay.dart';
+import 'package:koukicons/assistant.dart';
+import 'package:koukicons/automotive.dart';
+import 'package:koukicons/blueprint.dart';
+import 'package:koukicons/businessman.dart';
+import 'package:koukicons/collaboration.dart';
+import 'package:koukicons/compass.dart';
+import 'package:koukicons/library.dart';
+import 'package:koukicons/mindMap.dart';
+import 'package:koukicons/roadmap.dart';
+import 'package:koukicons/share1.dart';
+import 'package:koukicons/shipped.dart';
+import 'package:koukicons/shop.dart';
 
 import 'models/resume_content.dart';
 import 'models/resume_position.dart';
@@ -8,21 +21,24 @@ class AaronResumeContents {
 
   static ResumeContent current = ResumeContent(
     executiveSummary: [
-      "Technical Executive who has led programs through high growth and long support.", 
+      "Technologist who has led programs in SaaS providers through high growth and long support.", 
       "Exceptional team builder who has effectively built high throughput agile teams.",
       "Innovative thinker adept at leading teams through uncharted territory.",
-      "Ruthlessly focused on business value, pragmatism, and iterative delivert."
+      "Ruthlessly focused on business value, pragmatism, and iterative delivery.",
+      "13 Years of experience building SaaS services for FinTech."
     ],
     currentPosition: ResumePosition(
       organization: "Geezeo",
       location: "Braintree, MA",
       dates: "2014-PRESENT",
       title: "Vice President, Product Management",
-      overview: "Manage product development, design, and UI engineering teams. Work with internal and external stakeholders to set and maintain product strategy across organizational units. Work with stakeholders in software partners to deﬁne and execute integration strategies.",
+      overview: "Responsible for all product design and development as well as front end and SDK engineering. Key player in defining and executing a massive expansion of integration platform powering integrated PFM now deployed in multiple Financial Institutions. Worked with Senior Management to plan and execute a round of capital resulting in an acquisition to Jack Henry Associates.",
       accomplishments: [
-        "Led multiple design, development and analysis projects concurrently delivering a number of strategic products such as TruBiz, Responsive Tiles, and Geezeo’s SDK Suite.",
-        "Work directly with Senior Management setting, maintaining and communicating overall product strategy across all of Geezeo’s products." ,
-        "Participate in architecture discussions with Financial Systems partners about strategic and tactical integration into various Core, OLB, Mobile, and other FinTech vendors."
+        Accomplishment(accomplishment:"Led product design and development through organizational pivot from single page SSO to broad integration platform.", leading: KoukiconsCompass(width:25),),
+        Accomplishment(accomplishment:"Worked with key stakeholders in Financial Institutions and Fintech Providers planning and executing deep integrations.", leading: KoukiconsRoadmap(width: 25 ,)) ,
+        Accomplishment(accomplishment:"Led Front End Engineering, SDK engineering teams and externally facing developer documentation and institution relationships.", leading: KoukiconsBlueprint(width: 25,)),
+        Accomplishment(accomplishment:"Work with Institutions and FinTech providers to define and execute Innovation projects with Geezeo platform features.", leading: KoukiconsCollaboration(width:25)),
+        Accomplishment(accomplishment:"Led product demonstrations and strategy discussions through acquisition activities.", leading: KoukiconsBusinessman(width: 25,),)
       ]
     ),
     pastPositions: [
@@ -33,10 +49,10 @@ class AaronResumeContents {
       title: "Managing Partner",
       overview: "Founding partner and senior consultant. Worked with partners to set overall organizational direction. Worked with partners in varying capacities including Software Architect, UX Designer, Project Manager, Platform Engineer, and Mobile Engineer.",
       accomplishments: [
-        "Led the UX Design, technical architecture, and initial development of a medium sized Angular mobile application in FinTech.",
-         "Led the technical design and development of a mobile SDK embedded in millions of devices and collecting analysis data in a Python/Mongo platform in Gaming." ,
-         "Led the mobile and assumed the platform development of a chat based automotive parts information system." ,
-         "Acted as a mobile developer on a number of other projects including a HIPAA compliant video conferencing and rewards based dining app.",
+        Accomplishment(accomplishment:"Led the UX Design, technical architecture, and initial development of a medium sized Angular mobile application in FinTech.", leading: KoukiconsLibrary(width:25)),
+        Accomplishment(accomplishment:"Led the technical design and development of a mobile SDK embedded in millions of devices and collecting analysis data in a Python/Mongo platform in Gaming.", leading: KoukiconsAirplay(width: 25,)) ,
+        Accomplishment(accomplishment:"Led the mobile and assumed the platform development of a chat based automotive parts information system.", leading: KoukiconsAutomotive(width:25)) ,
+        Accomplishment(accomplishment:"Acted as a mobile developer on a number of other projects including a HIPAA compliant video conferencing and rewards based dining app.", leading: KoukiconsShop(width: 25,)),
       ]
     ),
     ResumePosition(
@@ -46,9 +62,9 @@ class AaronResumeContents {
         title: "Director, Mobile Engineering",
         overview: "Responsible for all native mobile platform development, deployment and support. Acted as lead iOS developer before and through launch of the deets product. Worked with other teams to lead the product development and user experience discussions for all mobile clients.",
         accomplishments: [
-          "Worked with the Chief Engineer to set initial development processes and establish engineering tracking  and delivery protocols.",
-          "Worked with platform team to set overall architectural patterns.",
-          "Acted as one of the primary liaisons between engineering and the Executive team and Investors.",
+          Accomplishment(accomplishment:"Worked with the Chief Engineer to set initial development processes and establish engineering tracking  and delivery protocols.", leading: KoukiconsShipped(width:25)),
+          Accomplishment(accomplishment:"Worked with platform team to set overall architectural patterns.", leading: KoukiconsRoadmap(width: 25 ,)),
+          Accomplishment(accomplishment:"Acted as one of the primary liaisons between engineering and the Executive team and Investors.", leading: KoukiconsBusinessman(width: 25,)),
         ]
       ),
     ResumePosition(
@@ -58,11 +74,10 @@ class AaronResumeContents {
         title: "Architect Senior Team Lead Mobile",
         overview: "Responsible for the full product and development lifecycle of the Lighthouse1 Mobile Platform including white labeled iOS and Android apps and .net platform components. Worked with executives and product representatives to set the strategic direction of the Mobile platform. ",
         accomplishments: [
-          "Gathered requirements, produced mocks and led the development process for both platforms.",
-          "Acted as a as active developer on both iOS and Android.",
-          "Worked with larger Partners during implementations and managed the completion of Statements of Work."
-          "Responsible for all of the build engineering for both iOS and Android."
-
+          Accomplishment(accomplishment:"Gathered requirements, produced mocks and led the development process for both platforms.", leading: KoukiconsRoadmap(width: 25 ,)),
+          Accomplishment(accomplishment:"Acted as a as active developer on both iOS and Android.", leading: KoukiconsBlueprint(width:25)),
+          Accomplishment(accomplishment:"Worked with larger Partners during implementations and managed the completion of Statements of Work.", leading: KoukiconsCollaboration(width:25)),
+          Accomplishment(accomplishment:"Responsible for all of the build engineering for both iOS and Android.", leading: KoukiconsShipped(width:25)),
         ]
       ),
     ResumePosition(
@@ -72,14 +87,14 @@ class AaronResumeContents {
         title: "Senior Architect Manager Integration Systems",
         overview: "Started as a developer, through various role changes ultimately served as a senior technical architect helping set and maintain tactical and strategic technical objectives. Led many projects and teams in a variety of technologies and use cases. Inﬂuential leader through exponential growth both organically, and through acquisitions. ",
         accomplishments: [
-          "Acted as a developer and eventually architect on a medium scale .net application including .net, WCF, BizTalk, and SQL Server." ,
-          "Helped design, build, and maintain the original build and source control system and was responsible for the build system for years." ,
-          "Responsible for the technical design, development and ongoing maintenance of the HSA platform which moved Billions of dollars per year." ,
-          "Led cross functional project teams of varying sizes from 3 to 11 up to 4 concurrently." ,
-          "Worked closely with management during acquisition technical due diligence, as well as helping seed knowledge transfer and manage newly acquired companies technical units." ,
-          "Inﬂuential voice and active participant in the organizational shift to agile processes.",
-          "Senior architect as the platform scaled through various stages of life, including disassembling the monolith." ,
-          "Designed, developed, maintained and supported the original set of partner facing and internal web services, ultimately ended up being responsible for all Integration Systems including hundreds of file feeds with ﬁnancial institutions and insurance carriers.",
+          Accomplishment(accomplishment:"Acted as a developer and eventually architect on a medium scale .net application including .net, WCF, BizTalk, and SQL Server.", leading: KoukiconsBlueprint(width: 25,)) ,
+          Accomplishment(accomplishment:"Helped design, build, and maintain the original build and source control system and was responsible for the build system for years.", leading: KoukiconsRoadmap(width: 25 ,)) ,
+          Accomplishment(accomplishment:"Responsible for the technical design, development and ongoing maintenance of the HSA platform which moved Billions of dollars per year.", leading: KoukiconsLibrary(width: 25)) ,
+          Accomplishment(accomplishment:"Led cross functional project teams of varying sizes from 3 to 11 up to 4 concurrently.", leading: KoukiconsCollaboration(width:25)) ,
+          Accomplishment(accomplishment:"Worked closely with management during acquisition technical due diligence, as well as helping seed knowledge transfer and manage newly acquired companies technical units.", leading: KoukiconsShare1(width:25)) ,
+          Accomplishment(accomplishment:"Inﬂuential voice and active participant in the organizational shift to agile processes.", leading: KoukiconsCompass(width:25)),
+          Accomplishment(accomplishment:"Senior architect as the platform scaled through various stages of life, including disassembling the monolith.", leading: KoukiconsMindMap(width:25)) ,
+          Accomplishment(accomplishment:"Designed, developed, maintained and supported the original set of partner facing and internal web services, ultimately ended up being responsible for all Integration Accomplishment(accomplishment:Systems including hundreds of file feeds with ﬁnancial institutions and insurance carriers.", leading: KoukiconsShipped(width:25)),
         ]
       ),
     ResumePosition(

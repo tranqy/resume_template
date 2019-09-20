@@ -8,23 +8,30 @@ class Skill extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      children: <Widget>[
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Row(
-            children: <Widget>[
-              Text(resumeSkill.headline, style: Theme.of(context).textTheme.headline.copyWith(color: Theme.of(context).primaryColor),),
-            ],
+    return Padding(
+      padding: const EdgeInsets.only(top: 8, bottom: 8),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(bottom: 2),
+            child: Row(
+              children: <Widget>[
+                Expanded(flex:2, child: Container(),),
+                Expanded(flex:50, child: Text(resumeSkill.headline, style: Theme.of(context).textTheme.headline.copyWith(color: Theme.of(context).primaryColor),)),
+                Expanded(flex: 1, child: Container(),)
+              ],
+            ),
           ),
-        ),
-        Row(
-          children: <Widget>[
-            Text(resumeSkill.content, style: Theme.of(context).textTheme.subhead.copyWith(color: Theme.of(context).accentColor),),
-          ],
-        )
-      ],    
+          Row(
+            children: <Widget>[
+              Expanded(flex:1, child: Container(),),
+              Expanded(flex:50, child: Text(resumeSkill.content, style: Theme.of(context).textTheme.subhead.copyWith(color: Theme.of(context).accentColor),)),
+              Expanded(flex: 1, child: Container(),)
+            ],
+          )
+        ],    
+      ),
     );
   }
 }

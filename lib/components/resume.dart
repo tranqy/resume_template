@@ -1,11 +1,10 @@
 import 'package:aaron_junod_dev/components/skill.dart';
 import 'package:aaron_junod_dev/models/resume_skill.dart';
 import 'package:flutter/material.dart';
-import 'package:koukicons/employeeBadge2.dart';
 import '../models/resume_content.dart';
 import '../models/resume_position.dart';
+import 'executive_summary.dart';
 import 'position.dart';
-import 'wrap_text.dart';
 
 class Resume extends StatelessWidget {
   final ResumeContent resumeContent;
@@ -20,8 +19,8 @@ class Resume extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          _header("EXEUTIVE SUMMARY", context),
-          _content([_executiveSummary(context)]),
+          _header("EXECUTIVE SUMMARY", context),
+          _content([ExecutiveSummary(resumeContent: resumeContent, context: context)]),
           _header("CURRENT POSITION", context),
           _content([Position(resumePosition: resumeContent.currentPosition,)]),
           _header("SKILLS", context),
@@ -68,29 +67,7 @@ class Resume extends StatelessWidget {
       ),
     );
   }
-
-  Widget _executiveSummary(BuildContext context) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: KoukiconsEmployeeBadge2(),
-        ),
-    
-        Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            for (String summary in resumeContent.executiveSummary) Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(summary, style: Theme.of(context).textTheme.subhead.copyWith(color: Theme.of(context).primaryColorDark),),
-            )
-          ],
-        )
-      ],
-    );
-  }
 }
+
+
 

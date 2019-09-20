@@ -16,23 +16,29 @@ class Header extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Row(
-            children: <Widget>[
-              Spacer(
-                flex: 1,
-              ),
-              ProfileImage(),
-              Spacer(
-                flex: 1,
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[HeaderProfileHeadline(), ContactIcons()],
-              ),
-              Spacer(
-                flex: 20,
-              ),
-            ],
+          Padding(
+            padding: const EdgeInsets.only(top: 16, bottom: 8),
+            child: Row(
+              children: <Widget>[
+                Spacer(
+                  flex: 1,
+                ),
+                ProfileImage(),
+                Spacer(
+                  flex: 1,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 4, bottom: 4),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[HeaderProfileHeadline(), ContactIcons()],
+                  ),
+                ),
+                Spacer(
+                  flex: 20,
+                ),
+              ],
+            ),
           ),
         ],
       ),

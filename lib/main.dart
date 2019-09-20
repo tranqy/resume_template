@@ -27,13 +27,6 @@ class MyApp extends StatelessWidget {
     );
   }
 
-  Widget _content(ResumeContent resumeContent) {
-    return Padding(
-      padding: EdgeInsets.all(16),
-      child: Resume(resumeContent: resumeContent,),
-    );
-  }
-
 }
 
 

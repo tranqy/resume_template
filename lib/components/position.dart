@@ -1,5 +1,6 @@
 import 'package:aaron_junod_dev/models/resume_position.dart';
 import 'package:flutter/material.dart';
+import 'package:koukicons/approval.dart';
 
 import 'wrap_text.dart';
 
@@ -51,18 +52,29 @@ class Position extends StatelessWidget {
             ],
           ),
         ),
-        for (String accomplishment in resumePosition.accomplishments)
-          Row(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.only(right: 8),
-                child: IconButton(
-                  icon: Icon(Icons.battery_full),
-                  onPressed: (){},
+        for (Accomplishment accomplishment in resumePosition.accomplishments)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 8, top: 4),
+            child: Row(
+              children: <Widget>[
+                Expanded(
+                  flex: 1,
+                  child: Container(),
                 ),
-              ),
-              WrapText(accomplishment, padding: const EdgeInsets.only(left:48, top:8, bottom: 8, right: 128),),
-            ],
+                Expanded(
+                  flex: 2,
+                  child: accomplishment.leading,
+                ),
+                Expanded(
+                  flex: 25,
+                  child: Text(accomplishment.accomplishment, style: Theme.of(context).textTheme.caption.copyWith(fontSize: 15),)
+                ),
+                Expanded(
+                  flex: 3,
+                  child: Container(),
+                ),
+              ],
+            ),
           )
       ],
     );

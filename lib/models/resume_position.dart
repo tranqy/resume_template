@@ -1,12 +1,26 @@
 
+import 'package:flutter/material.dart';
+import 'package:koukicons/next.dart';
+
 class ResumePosition {
   final String organization;
   final String title;
   final String dates;
   final String overview;
   final String location;
-  final List<String> accomplishments;
+  final List<Accomplishment> accomplishments;
 
   ResumePosition({this.organization, this.title, this.dates, this.overview, this.accomplishments, this.location});
   
+}
+
+class Accomplishment {
+  final String accomplishment;
+  Widget leading;
+
+  Accomplishment({this.accomplishment, this.leading}) {
+    if (this.leading == null) {
+      this.leading = KoukiconsNext(width: 25,);
+    }
+  }
 }
