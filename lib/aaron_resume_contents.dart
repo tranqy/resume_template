@@ -1,7 +1,6 @@
 
 import 'package:aaron_junod_dev/models/resume_skill.dart';
 import 'package:koukicons/airplay.dart';
-import 'package:koukicons/assistant.dart';
 import 'package:koukicons/automotive.dart';
 import 'package:koukicons/blueprint.dart';
 import 'package:koukicons/businessman.dart';
