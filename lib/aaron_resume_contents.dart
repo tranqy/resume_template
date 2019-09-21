@@ -1,18 +1,6 @@
 
 import 'package:aaron_junod_dev/models/resume_skill.dart';
-import 'package:koukicons/airplay.dart';
-import 'package:koukicons/automotive.dart';
-import 'package:koukicons/blueprint.dart';
-import 'package:koukicons/businessman.dart';
-import 'package:koukicons/collaboration.dart';
-import 'package:koukicons/compass.dart';
-import 'package:koukicons/library.dart';
-import 'package:koukicons/mindMap.dart';
-import 'package:koukicons/roadmap.dart';
-import 'package:koukicons/share1.dart';
-import 'package:koukicons/shipped.dart';
-import 'package:koukicons/shop.dart';
-
+import 'package:flutter/material.dart';
 import 'models/resume_content.dart';
 import 'models/resume_position.dart';
 
@@ -33,11 +21,11 @@ class AaronResumeContents {
       title: "Vice President, Product Management",
       overview: "Responsible for all product design and development as well as front end and SDK engineering. Key player in defining and executing a massive expansion of integration platform powering integrated PFM now deployed in multiple Financial Institutions. Worked with Senior Management to plan and execute a round of capital resulting in an acquisition to Jack Henry Associates.",
       accomplishments: [
-        Accomplishment(accomplishment:"Led product design and development through organizational pivot from single page SSO to broad integration platform.", leading: KoukiconsCompass(width:25),),
-        Accomplishment(accomplishment:"Worked with key stakeholders in Financial Institutions and Fintech Providers planning and executing deep integrations.", leading: KoukiconsRoadmap(width: 25 ,)) ,
-        Accomplishment(accomplishment:"Led Front End Engineering, SDK engineering teams and externally facing developer documentation and institution relationships.", leading: KoukiconsBlueprint(width: 25,)),
-        Accomplishment(accomplishment:"Work with Institutions and FinTech providers to define and execute Innovation projects with Geezeo platform features.", leading: KoukiconsCollaboration(width:25)),
-        Accomplishment(accomplishment:"Led product demonstrations and strategy discussions through acquisition activities.", leading: KoukiconsBusinessman(width: 25,),)
+        Accomplishment(accomplishment:"Led product design and development through organizational pivot from single page SSO to broad integration platform.", leading: Image.asset("assets/icons/compass.png", width: 25, height: 25,),),
+        Accomplishment(accomplishment:"Worked with key stakeholders in Financial Institutions and Fintech Providers planning and executing deep integrations.", leading: Image.asset("assets/icons/roadmap.png", width: 25, height: 25,)) ,
+        Accomplishment(accomplishment:"Led Front End Engineering, SDK engineering teams and externally facing developer documentation and institution relationships.", leading: Image.asset("assets/icons/blueprint.png", width: 25, height: 25,)),
+        Accomplishment(accomplishment:"Work with Institutions and FinTech providers to define and execute Innovation projects with Geezeo platform features.", leading: Image.asset("assets/icons/collaboration.png", width: 25, height: 25,)),
+        Accomplishment(accomplishment:"Led product demonstrations and strategy discussions through acquisition activities.", leading: Image.asset("assets/icons/businessman.png", width: 25, height: 25,),)
       ]
     ),
     pastPositions: [
@@ -48,10 +36,10 @@ class AaronResumeContents {
       title: "Managing Partner",
       overview: "Founding partner and senior consultant. Worked with partners to set overall organizational direction. Worked with partners in varying capacities including Software Architect, UX Designer, Project Manager, Platform Engineer, and Mobile Engineer.",
       accomplishments: [
-        Accomplishment(accomplishment:"Led the UX Design, technical architecture, and initial development of a medium sized Angular mobile application in FinTech.", leading: KoukiconsLibrary(width:25)),
-        Accomplishment(accomplishment:"Led the technical design and development of a mobile SDK embedded in millions of devices and collecting analysis data in a Python/Mongo platform in Gaming.", leading: KoukiconsAirplay(width: 25,)) ,
-        Accomplishment(accomplishment:"Led the mobile and assumed the platform development of a chat based automotive parts information system.", leading: KoukiconsAutomotive(width:25)) ,
-        Accomplishment(accomplishment:"Acted as a mobile developer on a number of other projects including a HIPAA compliant video conferencing and rewards based dining app.", leading: KoukiconsShop(width: 25,)),
+        Accomplishment(accomplishment:"Led the UX Design, technical architecture, and initial development of a medium sized Angular mobile application in FinTech.", leading: Image.asset("assets/icons/library.png", width: 25, height: 25,)),
+        Accomplishment(accomplishment:"Led the technical design and development of a mobile SDK embedded in millions of devices and collecting analysis data in a Python/Mongo platform in Gaming.", leading: Image.asset("assets/icons/airplay.png", width: 25, height: 25,)) ,
+        Accomplishment(accomplishment:"Led the mobile and assumed the platform development of a chat based automotive parts information system.", leading: Image.asset("assets/icons/automotive.png", width: 25, height: 25,)) ,
+        Accomplishment(accomplishment:"Acted as a mobile developer on a number of other projects including a HIPAA compliant video conferencing and rewards based dining app.", leading: Image.asset("assets/icons/shop.png", width: 25, height: 25,)),
       ]
     ),
     ResumePosition(
@@ -61,9 +49,9 @@ class AaronResumeContents {
         title: "Director, Mobile Engineering",
         overview: "Responsible for all native mobile platform development, deployment and support. Acted as lead iOS developer before and through launch of the deets product. Worked with other teams to lead the product development and user experience discussions for all mobile clients.",
         accomplishments: [
-          Accomplishment(accomplishment:"Worked with the Chief Engineer to set initial development processes and establish engineering tracking  and delivery protocols.", leading: KoukiconsShipped(width:25)),
-          Accomplishment(accomplishment:"Worked with platform team to set overall architectural patterns.", leading: KoukiconsRoadmap(width: 25 ,)),
-          Accomplishment(accomplishment:"Acted as one of the primary liaisons between engineering and the Executive team and Investors.", leading: KoukiconsBusinessman(width: 25,)),
+          Accomplishment(accomplishment:"Worked with the Chief Engineer to set initial development processes and establish engineering tracking  and delivery protocols.", leading: Image.asset("assets/icons/shipped.png", width: 25, height: 25,)),
+          Accomplishment(accomplishment:"Worked with platform team to set overall architectural patterns.", leading: Image.asset("assets/icons/roadmap.png", width: 25, height: 25,)),
+          Accomplishment(accomplishment:"Acted as one of the primary liaisons between engineering and the Executive team and Investors.", leading: Image.asset("assets/icons/businessman.png", width: 25, height: 25,)),
         ]
       ),
     ResumePosition(
@@ -73,10 +61,10 @@ class AaronResumeContents {
         title: "Architect Senior Team Lead Mobile",
         overview: "Responsible for the full product and development lifecycle of the Lighthouse1 Mobile Platform including white labeled iOS and Android apps and .net platform components. Worked with executives and product representatives to set the strategic direction of the Mobile platform. ",
         accomplishments: [
-          Accomplishment(accomplishment:"Gathered requirements, produced mocks and led the development process for both platforms.", leading: KoukiconsRoadmap(width: 25 ,)),
-          Accomplishment(accomplishment:"Acted as a as active developer on both iOS and Android.", leading: KoukiconsBlueprint(width:25)),
-          Accomplishment(accomplishment:"Worked with larger Partners during implementations and managed the completion of Statements of Work.", leading: KoukiconsCollaboration(width:25)),
-          Accomplishment(accomplishment:"Responsible for all of the build engineering for both iOS and Android.", leading: KoukiconsShipped(width:25)),
+          Accomplishment(accomplishment:"Gathered requirements, produced mocks and led the development process for both platforms.", leading: Image.asset("assets/icons/roadmap.png", width: 25, height: 25,)),
+          Accomplishment(accomplishment:"Acted as a as active developer on both iOS and Android.", leading: Image.asset("assets/icons/blueprint.png", width: 25, height: 25,)),
+          Accomplishment(accomplishment:"Worked with larger Partners during implementations and managed the completion of Statements of Work.", leading: Image.asset("assets/icons/collaboration.png", width: 25, height: 25,)),
+          Accomplishment(accomplishment:"Responsible for all of the build engineering for both iOS and Android.", leading: Image.asset("assets/icons/shipped.png", width: 25, height: 25,)),
         ]
       ),
     ResumePosition(
@@ -86,14 +74,14 @@ class AaronResumeContents {
         title: "Senior Architect Manager Integration Systems",
         overview: "Started as a developer, through various role changes ultimately served as a senior technical architect helping set and maintain tactical and strategic technical objectives. Led many projects and teams in a variety of technologies and use cases. Inﬂuential leader through exponential growth both organically, and through acquisitions. ",
         accomplishments: [
-          Accomplishment(accomplishment:"Acted as a developer and eventually architect on a medium scale .net application including .net, WCF, BizTalk, and SQL Server.", leading: KoukiconsBlueprint(width: 25,)) ,
-          Accomplishment(accomplishment:"Helped design, build, and maintain the original build and source control system and was responsible for the build system for years.", leading: KoukiconsRoadmap(width: 25 ,)) ,
-          Accomplishment(accomplishment:"Responsible for the technical design, development and ongoing maintenance of the HSA platform which moved Billions of dollars per year.", leading: KoukiconsLibrary(width: 25)) ,
-          Accomplishment(accomplishment:"Led cross functional project teams of varying sizes from 3 to 11 up to 4 concurrently.", leading: KoukiconsCollaboration(width:25)) ,
-          Accomplishment(accomplishment:"Worked closely with management during acquisition technical due diligence, as well as helping seed knowledge transfer and manage newly acquired companies technical units.", leading: KoukiconsShare1(width:25)) ,
-          Accomplishment(accomplishment:"Inﬂuential voice and active participant in the organizational shift to agile processes.", leading: KoukiconsCompass(width:25)),
-          Accomplishment(accomplishment:"Senior architect as the platform scaled through various stages of life, including disassembling the monolith.", leading: KoukiconsMindMap(width:25)) ,
-          Accomplishment(accomplishment:"Designed, developed, maintained and supported the original set of partner facing and internal web services, ultimately ended up being responsible for all Integration Accomplishment(accomplishment:Systems including hundreds of file feeds with ﬁnancial institutions and insurance carriers.", leading: KoukiconsShipped(width:25)),
+          Accomplishment(accomplishment:"Acted as a developer and eventually architect on a medium scale .net application including .net, WCF, BizTalk, and SQL Server.", leading: Image.asset("assets/icons/blueprint.png", width: 25, height: 25,)) ,
+          Accomplishment(accomplishment:"Helped design, build, and maintain the original build and source control system and was responsible for the build system for years.", leading: Image.asset("assets/icons/roadmap.png", width: 25, height: 25,)) ,
+          Accomplishment(accomplishment:"Responsible for the technical design, development and ongoing maintenance of the HSA platform which moved Billions of dollars per year.", leading: Image.asset("assets/icons/library.png", width: 25, height: 25,)) ,
+          Accomplishment(accomplishment:"Led cross functional project teams of varying sizes from 3 to 11 up to 4 concurrently.", leading: Image.asset("assets/icons/collaboration.png", width: 25, height: 25,)) ,
+          Accomplishment(accomplishment:"Worked closely with management during acquisition technical due diligence, as well as helping seed knowledge transfer and manage newly acquired companies technical units.", leading: Image.asset("assets/icons/share1.png", width: 25, height: 25,)) ,
+          Accomplishment(accomplishment:"Inﬂuential voice and active participant in the organizational shift to agile processes.", leading: Image.asset("assets/icons/compass.png", width: 25, height: 25,)),
+          Accomplishment(accomplishment:"Senior architect as the platform scaled through various stages of life, including disassembling the monolith.", leading: Image.asset("assets/icons/mindmap.png", width: 25, height: 25,)) ,
+          Accomplishment(accomplishment:"Designed, developed, maintained and supported the original set of partner facing and internal web services, ultimately ended up being responsible for all Integration Accomplishment(accomplishment:Systems including hundreds of file feeds with ﬁnancial institutions and insurance carriers.", leading: Image.asset("assets/icons/shipped.png", width: 25, height: 25,)),
         ]
       ),
     ResumePosition(

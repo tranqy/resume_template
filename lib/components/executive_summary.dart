@@ -1,6 +1,5 @@
 import '../models/resume_content.dart';
 import 'package:flutter/material.dart';
-import 'package:koukicons/employeeBadge2.dart';
 
 class ExecutiveSummary extends StatelessWidget {
   const ExecutiveSummary({
@@ -15,11 +14,11 @@ class ExecutiveSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         Expanded(
-          flex: 5,
-          child: KoukiconsEmployeeBadge2(),
+          flex: 4,
+          child: Image.asset("assets/icons/employeeBadge2.png"),
         ),
     
         Expanded(

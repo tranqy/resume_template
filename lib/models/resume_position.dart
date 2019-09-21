@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:koukicons/next.dart';
 
 class ResumePosition {
   final String organization;
@@ -20,7 +19,7 @@ class Accomplishment {
 
   Accomplishment({this.accomplishment, this.leading}) {
     if (this.leading == null) {
-      this.leading = KoukiconsNext(width: 25,);
+      this.leading = Image.asset("assets/icons/next.png", width: 25,);
     }
   }
 }

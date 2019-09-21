@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'components/header.dart';
 import 'components/custom_theme.dart';
 import 'components/resume.dart';
-import 'models/resume_content.dart';
 
 void main() => runApp(MyApp());
 

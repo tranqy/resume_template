@@ -1,6 +1,5 @@
 import 'package:aaron_junod_dev/models/resume_position.dart';
 import 'package:flutter/material.dart';
-import 'package:koukicons/approval.dart';
 
 import 'wrap_text.dart';
 
