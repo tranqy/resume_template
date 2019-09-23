@@ -10,4 +10,4 @@ Flutter is a toolkit for creating cross plaform apps. Flutter recently added web
 
 This app is deployed to [my server](https://aaron.junod.dev).
 
-My resume is also available in [the play store](http://google.com).
+My resume is also available in [the play store](http://google.com) (soon).
