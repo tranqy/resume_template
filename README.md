@@ -14,5 +14,12 @@ Flutter apps start in /lib/main.dart.
 /lib/components has most of the layout code.
 Content should be centralized in aaron_resume_contents.dart.
 
-My resume is also available in [the play store](http://google.com) (soon).
+## Todo
+
+- [ ] Remaining responsive text wrapping
+- [ ] Add a mobile breakpoint and resize some things, or use the offset trick from [here](https://www.youtube.com/watch?v=afBmGC63iIQ).
+- [ ] PDF Download
+- [ ] Color chooser
+
+~~My resume is also available in [the play store](http://google.com)~~ (soon).
 

@@ -1,15 +1,16 @@
 import 'package:aaron_junod_dev/models/resume_content.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+// import 'dart:io';
+
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:universal_html/prefer_universal/html.dart' as html;
 
 class ContactIcons extends StatelessWidget {
   final ResumeContent resumeContent;
 
-  const ContactIcons({
-    Key key,
-    this.resumeContent
-  }) : super(key: key);
+  const ContactIcons({Key key, this.resumeContent}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -34,11 +35,12 @@ class ContactIcons extends StatelessWidget {
             color: Colors.white54,
             icon: new Icon(FontAwesomeIcons.twitter),
             onPressed: () {
-              _launchURL("http://twitter.com/${resumeContent.twitter}");
+              String url = "http://twitter.com/${resumeContent.twitter}";
+              _launchURL(url);
             }),
         FlatButton(
           onPressed: () {
-              _launchURL("mailto:${resumeContent.email}");
+            _launchURL("mailto:${resumeContent.email}");
           },
           child: Text(resumeContent.email,
               style: TextStyle(
@@ -49,15 +51,22 @@ class ContactIcons extends StatelessWidget {
       ],
     );
   }
+
   _launchURL(String url) async {
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
+    html.window.location.assign(url);
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 }
 
-
-
-
-}
+// bool _isFlutterWeb() {
+//   return Platform.isWindows == false &&
+//       Platform.isAndroid == false &&
+//       Platform.isFuchsia == false &&
+//       Platform.isIOS == false &&
+//       Platform.isLinux == false &&
+//       Platform.isMacOS == false;
+// }
