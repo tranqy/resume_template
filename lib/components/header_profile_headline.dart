@@ -1,23 +1,26 @@
+import 'package:aaron_junod_dev/models/resume_content.dart';
 import 'package:flutter/material.dart';
 
 class HeaderProfileHeadline extends StatelessWidget {
   final HeaderProfileHeadlineDirection direction;
+  final ResumeContent resumeContent;
 
   const HeaderProfileHeadline({
     Key key,
     this.direction,
+    this.resumeContent
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    
+
     var _profileDetails = <Widget>[
-      Text("Aaron Junod",
+      Text(resumeContent.name,
           style: TextStyle(
               color: Colors.white,
               fontSize: 21.0,
               fontWeight: FontWeight.w300)),
-      Text("Technology executive with extensive Fintech and SaaS experience",
+      Text(resumeContent.headerText,
           style: TextStyle(
               color: Colors.white,
               fontSize: 15.0,

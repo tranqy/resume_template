@@ -1,16 +1,13 @@
-# aaron_junod_dev
+# Aaron Junod's Resume
 
-A new Flutter project.
+I wanted to update my resume and here we are.
 
-## Getting Started
+Feel free to fork and update if you need to do the same and like this idea.
 
-This project is a starting point for a Flutter application.
+## Technical Details
 
-A few resources to get you started if this is your first Flutter project:
+Flutter is a toolkit for creating cross plaform apps. Flutter recently added web support. 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+This app is deployed to [my server](https://aaron.junod.dev).
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+My resume is also available in [the play store](http://google.com).

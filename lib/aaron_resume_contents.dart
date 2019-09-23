@@ -7,6 +7,12 @@ import 'models/resume_position.dart';
 class AaronResumeContents {
 
   static ResumeContent current = ResumeContent(
+    name: "Aaron Junod",
+    email: "aaron@junod.dev",
+    github: "tranqy",
+    twitter: "tranqy",
+    linkedIn: "aaronjunod",
+    headerText: "Technology executive with extensive Fintech and SaaS experience",
     executiveSummary: [
       "Technologist who has led programs in SaaS providers through high growth and long support.", 
       "Exceptional team builder who has effectively built high throughput agile teams.",
@@ -104,7 +110,7 @@ class AaronResumeContents {
     skills: [
       ResumeSkill("FINANCIAL SERVICES / FINTECH / INSURANCE EXPERTISE", "Understanding of core and digital banking, prepaid claims processing, prepaid funding, merchant network settlements etc."),
       ResumeSkill("DISTRIBUTED SYSTEMS AND SAAS EXPERTISE", "Experienced in high throughput, multi-tenant system design and maintenance over long periods of time."),
-      ResumeSkill("MODERN FULL STACK POLYGOT ENGINEER AND ARCHITECT", "Experience building, growing, and adjusting teams through rapidly evolving business and technology climates."),
+      ResumeSkill("MODERN FULL STACK POLYGLOT ENGINEER AND ARCHITECT", "Experience building, growing, and adjusting teams through rapidly evolving business and technology climates."),
       ResumeSkill("AGILE PRACTITIONER AND COACH", "Delivered agile concepts to a number of development teams. Knowledgable on scrum, kanban, and other variations."),
       ResumeSkill("PRODUCT OWNER AND UX DESIGNER", "Experienced in managing product planning, design teams, user experience design and testing."),
       

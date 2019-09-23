@@ -55,21 +55,21 @@ class Position extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 8, top: 4),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
               children: <Widget>[
                 Expanded(
-                  flex: 1,
-                  child: Container(),
-                ),
-                Expanded(
-                  flex: 2,
-                  child: accomplishment.leading,
+                  flex: 3,
+                  child: Padding(
+                    padding: const EdgeInsets.only(right:4),
+                    child: accomplishment.leading,
+                  ),
                 ),
                 Expanded(
                   flex: 25,
                   child: Text(accomplishment.accomplishment, style: Theme.of(context).textTheme.caption.copyWith(fontSize: 15),)
                 ),
                 Expanded(
-                  flex: 3,
+                  flex: 1,
                   child: Container(),
                 ),
               ],

@@ -19,7 +19,7 @@ class Resume extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          _header("EXECUTIVE SUMMARY", context),
+          _header("SUMMARY", context),
           _content([ExecutiveSummary(resumeContent: resumeContent, context: context)]),
           _header("CURRENT POSITION", context),
           _content([Position(resumePosition: resumeContent.currentPosition,)]),

@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget _portfolio(BuildContext context) {
     return ListView(
       children: <Widget>[
-        Header(),
+        Header(resumeContent: AaronResumeContents.current),
         Resume(resumeContent: AaronResumeContents.current),
       ],
     );

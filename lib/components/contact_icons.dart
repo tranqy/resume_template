@@ -1,9 +1,13 @@
+import 'package:aaron_junod_dev/models/resume_content.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class ContactIcons extends StatelessWidget {
+  final ResumeContent resumeContent;
+
   const ContactIcons({
     Key key,
+    this.resumeContent
   }) : super(key: key);
 
   @override
@@ -33,7 +37,7 @@ class ContactIcons extends StatelessWidget {
             }),
         FlatButton(
           onPressed: () {},
-          child: Text("aaron@junod.dev",
+          child: Text(resumeContent.email,
               style: TextStyle(
                   color: Colors.white54,
                   fontSize: 15.0,

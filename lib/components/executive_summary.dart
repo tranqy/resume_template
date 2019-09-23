@@ -14,11 +14,17 @@ class ExecutiveSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         Expanded(
           flex: 4,
-          child: Image.asset("assets/icons/employeeBadge2.png"),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+              Image.asset("assets/icons/employeeBadge2.png"),
+            ],
+          ),
         ),
     
         Expanded(
@@ -29,7 +35,7 @@ class ExecutiveSummary extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               for (String summary in resumeContent.executiveSummary) Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.only(left: 8, right: 8, bottom: 8),
                 child: Text(summary, style: Theme.of(context).textTheme.subhead.copyWith(color: Theme.of(context).primaryColorDark),),
               )
             ],
